@@ -1,0 +1,45 @@
+.content__heading {
+    margin-top: 100px;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    line-height:0%
+}
+
+.content__emailverify {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    margin: 0 auto;
+}
+
+.content__emailverify a {
+    display: block;
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 260px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.verify-form__resend {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.verify-form__resend button {
+    border: 0px;
+    color: #0073CC;
+    font-size: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,135 @@
+.current-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.current-date::before {
+    content: '📅';
+    font-size: 25px;
+}
+
+.attendance-table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #FFF;
+}
+
+th {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    color: #737373;
+    border-bottom: 3px solid #E1E1E1;
+}
+
+td {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    color: #737373;
+    border-bottom: 2px solid #E1E1E1;
+}
+
+.date-cell {
+    letter-spacing: normal;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.detail-cell a {
+    color: #000;
+}
+
+.date-navigation {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date-navigation a {
+    color: #737373;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    padding: 5px 10px;
+}
+
+.date-navigation a:hover {
+    color: #333;
+}
+
+.border {
+    margin-top: 50px;
+}
+
+.border__list {
+    border-bottom: 1px solid #5F5F5F;
+    display: flex;
+    list-style: none;
+}
+
+.border__list li {
+    padding: 20px 55px;
+    font-weight: bold;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5F5F5F;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+}
+
+.nav-link.active {
+    z-index: 1;
+    font-weight: bold;
+    color: #000;
+}
+
+.name-header {
+    width: 33%
+}
+
+.email-header {
+    width: 33%
+}
+
+.detail-header {
+    width: 33%
+}
+
+.form-export {
+    margin-top: 60px;
+}
+
+.csv-btn {
+    width: 180px;
+}

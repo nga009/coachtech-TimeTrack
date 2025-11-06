@@ -1,0 +1,74 @@
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 180px;
+}
+
+.status-badge {
+    display: inline-block;
+    background-color: #C8C8C8;
+    color: #696969;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 40px;
+}
+
+.date {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 80px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 85px;
+}
+
+.attend-btn {
+    height: 80px;
+    width: 220px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 50px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.break-btn {
+    height: 80px;
+    width: 220px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    padding: 15px 50px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.working__btn {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.workend_message {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}

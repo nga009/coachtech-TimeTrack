@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 20px;
+}
+
+.header::before {
+    content: '';
+    width: 8px;
+    height: 35px;
+    background-color: #000;
+    display: inline-block;
+}
+
+.button-container {
+    text-align: right;
+}
+
+.submit-btn {
+    width: 130px;
+    height: 50px;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:disabled {
+    background-color: #696969;
+    cursor: default;
+}
