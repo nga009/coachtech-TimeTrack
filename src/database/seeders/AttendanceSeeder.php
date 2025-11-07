@@ -13,14 +13,6 @@ class AttendanceSeeder extends Seeder
 {
     public function run()
     {
-/*        // 管理者ユーザー作成
-        User::create([
-            'name' => '管理者',
-            'email' => 'admin@example.com',
-            'password' => Hash::make('password'),
-            'is_admin' => true,
-        ]);
-*/
         // 一般ユーザー2名作成
         $user1 = User::create([
             'name' => '山田太郎',
