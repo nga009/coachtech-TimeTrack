@@ -3,15 +3,16 @@
 ## 環境構築
 1. リポジトリをクローン
 ``` bash
-git@github.com:nga009/coachtech-TimeTrack.git
+git clone git@github.com:nga009/coachtech-TimeTrack.git
 ```
 2. DockerDesktopアプリを立ち上げる
-2. プロジェクト直下で、以下のコマンドを実行する
+3. プロジェクト直下で、以下のコマンドを実行する
 ``` bash
 make init
 ```
 
 ## テストアカウント
+```
 管理者
 name: 管理者 
 email: admin@example.com  
@@ -27,6 +28,7 @@ email: sato@example.com
 password: password  
 -------------------------
 ※2025/10/1～2025/11/8までのサンプル勤怠データあり
+```
 
 ## 使用技術(実行環境)
 - PHP 8.1
