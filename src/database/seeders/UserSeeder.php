@@ -24,14 +24,5 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
             'role' => 'admin',
         ]);
-
-        // 一般ユーザー
-        User::create([
-            'name' => 'テスト太郎',
-            'email' => 'user@example.com',
-            'password' => Hash::make('password'),
-            'email_verified_at' => Carbon::now(),
-            'role' => 'user',
-        ]);
     }
 }
