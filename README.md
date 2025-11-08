@@ -36,13 +36,18 @@ password: password
 
 ## PHPUnitを利用したテストに関して
 **環境構築**
-以下のコマンドを実行:  
+  
 ```
+// 以下のコマンドを順に実行:
 //テスト用データベースの作成
 docker-compose exec mysql bash
 mysql -u root -p
 //パスワードはrootと入力
 create database demo_test;
+// mysql rootログインを終了
+exit
+// mysql bashを終了
+exit
 
 docker-compose exec php bash
 php artisan key:generate --env=testing
@@ -52,8 +57,7 @@ php artisan migrate:fresh --env=testing
 
 **Unitテスト実行**
 ```
-docker-compose exec php bash
-php artisan test
+php artisan test --testsuite=Feature
 ```
 
 
