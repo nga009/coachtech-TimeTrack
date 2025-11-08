@@ -25,10 +25,10 @@ class AttendanceEditRequest extends FormRequest
     {
         return [
             'clock_in' => 'nullable|date_format:H:i',
-            'clock_out' => 'nullable|date_format:H:i|after:clock_in',
+            'clock_out' => 'nullable|date_format:H:i|after_or_equal:clock_in',
             'breaks' => 'array',
-            'breaks.*.start' => 'nullable|date_format:H:i|after:clock_in|before:clock_out',
-            'breaks.*.end' => 'nullable|date_format:H:i|after:breaks.*.start|before:clock_out',
+            'breaks.*.start' => 'nullable|date_format:H:i|after_or_equal:clock_in|before_or_equal:clock_out',
+            'breaks.*.end' => 'nullable|date_format:H:i|after_or_equal:breaks.*.start|before_or_equal:clock_out',
             'memo' => 'required',
         ];
     }
@@ -38,13 +38,13 @@ class AttendanceEditRequest extends FormRequest
         return [
             'clock_in.date_format' => '出勤時間はHH:MM形式で入力してください',
             'clock_out.date_format' => '退勤時間はHH:MM形式で入力してください',
-            'clock_out.after' => '出勤時間もしくは退勤時間が不適切な値です',
+            'clock_out.after_or_equal' => '出勤時間もしくは退勤時間が不適切な値です',
             'breaks.*.start.date_format' => '休憩開始時間はHH:MM形式で入力してください',
-            'breaks.*.start.after' => '休憩時間が不適切な値です',
-            'breaks.*.start.before' => '休憩時間が不適切な値です',
+            'breaks.*.start.after_or_equal' => '休憩時間が不適切な値です',
+            'breaks.*.start.before_or_equal' => '休憩時間が不適切な値です',
             'breaks.*.end.date_format' => '休憩終了時間はHH:MM形式で入力してください',
-            'breaks.*.end.after' => '休憩時間が不適切な値です',
-            'breaks.*.end.before' => '休憩時間もしくは退勤時間が不適切な値です',
+            'breaks.*.end.after_or_equal' => '休憩時間が不適切な値です',
+            'breaks.*.end.before_or_equal' => '休憩時間もしくは退勤時間が不適切な値です',
             'memo.required' => '備考を記入してください',
         ];
     }
