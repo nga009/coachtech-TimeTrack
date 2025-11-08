@@ -10,6 +10,10 @@ git clone git@github.com:nga009/coachtech-TimeTrack.git
 ``` bash
 make init
 ```
+※お使いの環境にmakeコマンドがインストールされていなく上述のコマンドがエラーになる場合は以下のコマンドを実行してください
+``` bash
+sudo apt install make
+```
 
 ## テストアカウント
 ```
@@ -29,6 +33,29 @@ password: password
 -------------------------
 ※2025/10/1～2025/11/8までのサンプル勤怠データあり
 ```
+
+## PHPUnitを利用したテストに関して
+**環境構築**
+以下のコマンドを実行:  
+```
+//テスト用データベースの作成
+docker-compose exec mysql bash
+mysql -u root -p
+//パスワードはrootと入力
+create database demo_test;
+
+docker-compose exec php bash
+php artisan key:generate --env=testing
+php artisan config:clear
+php artisan migrate:fresh --env=testing
+```
+
+**Unitテスト実行**
+```
+docker-compose exec php bash
+php artisan test
+```
+
 
 ## 使用技術(実行環境)
 - PHP 8.1
