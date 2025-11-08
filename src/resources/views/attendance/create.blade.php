@@ -20,7 +20,7 @@
     @endif
 
     <!-- 表示用 -->
-    <div class="date" id="dateDisplay">{{ now()->isoFormat('YYYY年MM月DD日(ddd)') }}</div>
+    <div class="date" id="dateDisplay">{{ now()->isoFormat('YYYY年M月D日(ddd)') }}</div>
     <div class="time" id="timeDisplay">{{ now()->format('H:i') }}</div>
 
     <!-- フォーム開始 -->
